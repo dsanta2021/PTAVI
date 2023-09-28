@@ -1,4 +1,4 @@
-# p3-python-resuelta
+# p3-python
 
 Repositorio de plantilla para la práctica 3 (Python avanzado) de PTAVI.
 
