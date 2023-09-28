@@ -7,7 +7,7 @@ import unittest
 import show_sound
 
 this_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.join(this_dir, '..')
+parent_dir = os.path.join(this_dir, '../..')
 
 
 class TestShow(unittest.TestCase):
