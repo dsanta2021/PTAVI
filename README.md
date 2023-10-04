@@ -13,3 +13,9 @@ repositorio deberá ser público a partir de la fecha de entrega.
 
 [Enunciado de esta práctica](https://gitlab.com/cursomminet/code/-/blob/master/p3-python/ejercicios.md).
 
+- Ejercicio 4_"test_mio"":
+
+Un prgrama con un test --> test_play_sound(), que llama a la función 
+play_sound() desde mysound.py. La idea es agregar afirmaciones para verificar que 
+el sonido se reproduzca como se espera.
+
