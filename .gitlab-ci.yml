@@ -14,4 +14,5 @@ tests:
 pep8:
   stage: Check
   script:
+    - pip install pycodestyle
     - pycodestyle *.py
