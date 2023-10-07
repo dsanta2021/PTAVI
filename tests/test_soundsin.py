@@ -37,11 +37,8 @@ class TestSoundSin(unittest.TestCase):
 
         bars = sen.bars(bar_period=0.0001)
 
-        # Comprueba el número de lineas
-        self.assertAlmostEqual(22060, len(bars.split('\n')), delta=10)
-
-        # Verifica la longitud de bar
-        self.assertAlmostEqual(41, len(bars.split('\n')[0]), delta=1)
+        self.assertAlmostEqual(22060, len(bars.split('\n')), delta=10)      # Comprueba el número de lineas
+        self.assertAlmostEqual(41, len(bars.split('\n')[0]), delta=1)       # Verifica la longitud de bar
 
 
 if __name__ == '__main__':

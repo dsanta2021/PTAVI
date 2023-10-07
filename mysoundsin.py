@@ -7,5 +7,5 @@ class SoundSin(Sound):
         super().__init__(duration)          # herencia de Sound
         self.frequency = frequency          # inicialización de las variables
         self.amplitude = amplitude
-
+        
         self.sin(frequency, amplitude)      # creación de la onda senoidal
