@@ -52,3 +52,23 @@ junto con *operator.add* para sumar las dos listas. Por otro lado, si las listas
 un tamaño diferente se utiliza *zip_longest* de la biblioteca **itertools**. Esta 
 función combina las listas rellenando los valores faltantes con un valor predeterminado 
 (por defecto None), que en este caso *fillvalue* es 0.
+
+**- Ejercicio 8_ "test_soundadd"**
+
+Un test compuesto por cinco funciones que usan **unittest** y que sirven todas para 
+comprobar el funcionamiento de la función *soundadd* del ejercicio anterior, mas 
+concretamente, para: 
+
+    - *test_different_lenght* -> Verifica que al sumar dos señales con diferentes 
+      tiempos la duración de la señal resultante es el mismo que el mayor de las que
+      se han sumado.
+    - *test_equal_lenght* -> Confirma que en el caso de que las señales que se suman
+      tengam una duración igual, la duración de la señal final tendrá la misma duración
+      que las otras señales.
+    - *test_s1_longer* y *test_s2_longer* -> Ambas verifican que si una de las dos
+      señales es más pequeña que la otra en timpo, el timpo del sonido final será
+      igual al de la señal de mayor duración.
+    - *test_non_lenght* -> Si hay un caso en el que las señales no tengan nada de 
+      duración, la señal final tendrá la misma duración (0) y los mismo valores de 
+      amplitus, ninguno.
+
