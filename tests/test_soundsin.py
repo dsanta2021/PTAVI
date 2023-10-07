@@ -32,7 +32,7 @@ class TestSoundSin(unittest.TestCase):
     def test_bars(self):
         duration = 2
         frequency = 440
-        amplitude = 0.001
+        amplitude = 0.0001
 
         sen = SoundSin(duration, frequency, amplitude)
         bars = sen.bars(bar_period=0.0001)

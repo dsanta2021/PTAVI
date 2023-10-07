@@ -43,5 +43,3 @@ para la primera muestra según la fórmula del sonido senoidal o comprobar que e
 valor de la lista samples coincide con ese valor esperado. Por último, el tercero,
 Comprueba que el número de líneas y la longitud de cada línea son los esperados según 
 los valores pasados al constructor.
-
-
