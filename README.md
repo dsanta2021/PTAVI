@@ -43,3 +43,12 @@ para la primera muestra según la fórmula del sonido senoidal o comprobar que e
 valor de la lista samples coincide con ese valor esperado. Por último, el tercero,
 Comprueba que el número de líneas y la longitud de cada línea son los esperados según 
 los valores pasados al constructor.
+
+**- Ejercicio 7_ "soundops"**
+
+El programa consta de una sola función *soundadd* que puede sumar dos listas de forma 
+funcional. Si las listas tienen el mismo número de elementos, se usa la función *map* 
+junto con *operator.add* para sumar las dos listas. Por otro lado, si las listas tienen
+un tamaño diferente se utiliza *zip_longest* de la biblioteca **itertools**. Esta 
+función combina las listas rellenando los valores faltantes con un valor predeterminado 
+(por defecto None), que en este caso *fillvalue* es 0.
