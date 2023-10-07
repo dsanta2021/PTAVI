@@ -13,9 +13,19 @@ repositorio deberá ser público a partir de la fecha de entrega.
 
 [Enunciado de esta práctica](https://gitlab.com/cursomminet/code/-/blob/master/p3-python/ejercicios.md).
 
-- Ejercicio 4_"test_mio"":
+**- Ejercicio 4_"test_mio":**
 
-Un prgrama con un test --> test_play_sound(), que llama a la función 
-play_sound() desde mysound.py. La idea es agregar afirmaciones para verificar que 
-el sonido se reproduzca como se espera.
+Un programa que relaiza un test que prueba diferntes aspectos del fichero **mysound.py**,
+hecho con una función *test_sound* que usa **unittest** para comprobar que:
+ 
+  - Comprueba que el número de muestras generadas es el esperado.
+  - Comprueba que los valores de una onda senoidal coinciden, se acerca al valor esperado,
+    son más grandes, pequeños o no son los esperados.
+  - Compara el valor de dos señales sonoidales diferentes. Usa recursos de **unittest** para
+    saber si los valores de las señales son iguales, uno mayor que otro, menor, diferentes ...
+
+**- Ejercicio 5_ "mysoundsin":**
+
+Un programa que consta de una calse, **SoundSin**, que hereda los parámetros de la clase **Sound** 
+del fichero **mysound**. Al inicializarlo se creará un buffer y una señal soinoidal con parámetros.
 
