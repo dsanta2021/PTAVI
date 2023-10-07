@@ -33,8 +33,8 @@ class TestSoundSin(unittest.TestCase):
         duration = 2
         frequency = 440
         amplitude = 0.001
-        sen = SoundSin(duration, frequency, amplitude)
 
+        sen = SoundSin(duration, frequency, amplitude)
         bars = sen.bars(bar_period=0.0001)
 
         self.assertAlmostEqual(22060, len(bars.split('\n')), delta=10)      # Comprueba el número de lineas
