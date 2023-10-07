@@ -36,8 +36,5 @@ class testMio(unittest.TestCase):
         self.assertLess(sound.buffer[466], sen.buffer[int(period2 * 2)])
 
 
-
 if __name__ == '__main__':
     unittest.main()
-
-

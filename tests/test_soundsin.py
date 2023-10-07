@@ -2,6 +2,7 @@ import unittest
 from mysoundsin import SoundSin
 import math
 
+
 class TestSoundSin(unittest.TestCase):
     def test_init(self):
         duration = 10
@@ -41,6 +42,7 @@ class TestSoundSin(unittest.TestCase):
 
         # Verifica la longitud de bar
         self.assertAlmostEqual(41, len(bars.split('\n')[0]), delta=1)
+
 
 if __name__ == '__main__':
     unittest.main()

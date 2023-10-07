@@ -9,4 +9,3 @@ class SoundSin(Sound):
         self.amplitude = amplitude
 
         self.sin(frequency, amplitude)      # creación de la onda senoidal
-
