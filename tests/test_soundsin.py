@@ -23,7 +23,7 @@ class TestSoundSin(unittest.TestCase):
         period = SoundSin.samples_second / frequency
         expected_value = amplitude * math.sin(2 * math.pi * frequency * 0 / sen.samples_second)
 
-        # Compruba si la amplitud coincide con lo esperado
+        # Comprueba si la amplitud coincide con lo esperado
         self.assertEqual(0, sen.buffer[int(period)])
 
         # Verifica si el valor del primer elemento del sonido senoidal es correcto

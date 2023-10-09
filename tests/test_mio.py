@@ -19,7 +19,7 @@ class TestMio(unittest.TestCase):
 
         # Comprueba los valores de la onda senoidal 1 (amplitud)
         self.assertEqual(0, sound.buffer[0])
-        self.assertNotEqual(maxAmplitud, sound.buffer[int(period1/2)])
+        self.assertNotEqual(maxAmpli, sound.buffer[int(period1/2)])
         self.assertGreater(sound.buffer[int(period1 * 0.1)],
                            sound.buffer[int(period1/2)])
         self.assertRegex('32766',
