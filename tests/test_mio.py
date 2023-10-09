@@ -8,11 +8,11 @@ class TestMio(unittest.TestCase):
         sound = Sound(1)
         sen = Sound(2)
         frec = 250
-        maxAmplitud = sound.max_amplitude
+        maxAmpli = sound.max_amplitude
         period1 = sound.samples_second / frec
         period2 = sen.samples_second / (frec*2)
-        sound.sin(frec, maxAmplitud)
-        sen.sin(frec*2, maxAmplitud/2)
+        sound.sin(frec, maxAmpli)
+        sen.sin(frec*2, maxAmpli/2)
 
         # Comprueba el número de muestras
         self.assertEqual(44100, len(sound.buffer))

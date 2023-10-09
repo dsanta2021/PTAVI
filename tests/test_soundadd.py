@@ -32,7 +32,7 @@ class TestSoundAdd(unittest.TestCase):
         self.assertEqual(s3.duration, max(s1.duration, s2.duration))
 
     def test_s2_longer(self):
-        s1 = Sound(1.5)
+        s1 = Sound(1.6)
         s2 = Sound(4.4)
         s3 = soundops.soundadd(s1, s2)
 
