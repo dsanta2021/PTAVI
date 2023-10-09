@@ -20,18 +20,24 @@ class TestMio(unittest.TestCase):
         # Comprueba los valores de la onda senoidal 1 (amplitud)
         self.assertEqual(0, sound.buffer[0])
         self.assertNotEqual(maxAmplitud, sound.buffer[int(period1/2)])
-        self.assertGreater(sound.buffer[int(period1 * 0.1)], sound.buffer[int(period1/2)])
-        self.assertRegex('32766', str(sound.buffer[int(period1 * 0.25)]), msg='Error')
+        self.assertGreater(sound.buffer[int(period1 * 0.1)],
+                           sound.buffer[int(period1/2)])
+        self.assertRegex('32766',
+                         str(sound.buffer[int(period1 * 0.25)]), msg='Error')
 
         # Comprueba los valores de la onda senoidal 2
         self.assertEqual(0, sen.buffer[int(period2 * 0)])
-        self.assertEqual(sen.buffer[int(period2 * 0.25)], sen.buffer[int(period2/4)])
-        self.assertAlmostEqual(16383, sen.buffer[int(period2 * 1.25)], delta=8)
+        self.assertEqual(sen.buffer[int(period2 * 0.25)],
+                         sen.buffer[int(period2/4)])
+        self.assertAlmostEqual(16383,
+                               sen.buffer[int(period2 * 1.25)], delta=8)
         self.assertLess(0, sen.buffer[int(period2/4)])
 
         # Compara los valores de las dos ondas senoidales
-        self.assertEqual(sound.buffer[int(period1/2)], -sen.buffer[int(period2)])
-        self.assertNotEqual(sound.buffer[int(period1 * 0.25)], -sen.buffer[int(period2 * 0.25)])
+        self.assertEqual(sound.buffer[int(period1/2)],
+                         -sen.buffer[int(period2)])
+        self.assertNotEqual(sound.buffer[int(period1 * 0.25)],
+                            -sen.buffer[int(period2 * 0.25)])
         self.assertGreater(sound.buffer[2], -sen.buffer[2])
         self.assertLess(sound.buffer[466], sen.buffer[int(period2 * 2)])
 
