@@ -42,8 +42,9 @@ class TestSoundAdd(unittest.TestCase):
         self.assertEqual(s3.duration, max(s1.duration, s2.duration))
 
     def test_non_lenght(self):
-        s1 = Sound(0)
-        s2 = Sound(0)
+        duration = 0
+        s1 = Sound(duration)
+        s2 = Sound(duration)
         s3 = soundops.soundadd(s1, s2)
 
         self.assertEqual(len(s1.buffer), s1.duration)
